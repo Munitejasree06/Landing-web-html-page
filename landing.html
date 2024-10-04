@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Modern Landing Page Using HTML And CSS</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        header {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
+            url(https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        nav {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .logo {
+            width: 80px;
+            height: 82px;
+           
+        }
+        .menu a {
+            text-decoration: none;
+            color: #f8f9fa;
+            padding: 10px 20px;
+            font-size: 18px;
+            position: relative;
+            transition: color 0.4s;
+        }
+        .menu a:before {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #651150;
+            transition: width 0.4s;
+        }
+        .menu a:hover {
+            color: #5f0d67;
+        }
+        .menu a:hover:before {
+            width: 100%;
+        }
+        .register a {
+            text-decoration: none;
+            color: #e5e9ed;
+            padding: 10px 20px;
+            font-size: 18px;
+            background: #700d5e;
+            border-radius: 5px;
+            transition: background 0.4s, color 0.4s;
+        }
+        .register a:hover {
+            background: #f8f9fa;
+            color: #984281;
+        }
+        .h_txt {
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #f8f9fa;
+        }
+        .h_txt span {
+            display: block;
+            letter-spacing: 2px;
+            font-size: 1.2em;
+        }
+        .h_txt h1 {
+            font-size: 3em;
+            margin: 20px 0;
+        }
+        .h_txt a {
+            text-decoration: none;
+            background: #5f0a59;
+            color: #f8f9fa;
+            padding: 10px 20px;
+            font-size: 18px;
+            transition: background 0.4s, color 0.4s;
+        }
+        .h_txt a:hover {
+            background: #f8f9fa;
+            color: #5d094c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images.png" alt="Your Photo"> 
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Help</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="register">
+                <a href="#">Sign up/ Sign in</a>
+            </div>
+        </nav>
+        <section class="h_txt">
+           <span>My codes</span>
+            <h1>Let's get started!</h1>
+            <a href="#">Available contents</a>
+        </section>
+    </header>
+</body>
+</html>
